@@ -1,0 +1,2 @@
+git add = git add is for adding new file or folders in staging area (is not commited yet)
+git commit -m = this thing commit your file / folders in staging area and the -m commands is a message like this git commit -m "Added hello_world.txt"
