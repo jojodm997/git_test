@@ -1,8 +1,47 @@
-git add = git add is for adding new file or folders in staging area (is not commited yet)
+GIT BASIC
+
+git add . = git add is for adding new file or folders in staging area (is not commited yet)
 git commit -m = this thing commit your file / folders in staging area and the -m commands is a message like this git commit -m "Added hello_world.txt"
 git status = is to see a git yeah a git
 git log = is to see a git changes like commit
 git push / git push origin main = pushing to remote repository 
+
+GIT SHORTCUTS
+
+git commit -am "automatic git add ."
+git config --global alias.ac "commit -am" = alias commmand it means you created another command in here is ac it means commit -am
+git commit --amend -m "change message of last commit"
+git commit --amend --no-edit = add files to last commit
+
+git push origin master --force = overwrite history on remote
+git revert better-days = undo a commit with a new commit.
+
+git stash = remove changes current working directory and save them for later use
+git stash pop = ready to changes back to your code
+git stash save cool = is like pop but have a name
+git stash list = list stash pop
+git stash apply 0 = like stash pop but it searches 0
+
+git branch -M mucho = changing git branch 
+git log --graph --oneline --decorate = better git log
+git checkout - = go to previous branch
+
+git bisect start = searching for error
+git bisect bad
+git bisect good 
+
+git rebase master --interactive = pull master branch to main and squash the commit please
+git commit --fixup fb2f677
+git commit --squash fc2f55
+git rebase -i --autosquash
+
+hook
+
+git fetch origin = git lastest code on remote repo
+git reset --hard origin/master = overwrite local code to remote code
+
+git clean -df = remove untrack file
+
 
 
 Cheatsheet
