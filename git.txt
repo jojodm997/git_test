@@ -3,6 +3,11 @@ GIT BASIC
 git add . = git add is for adding new file or folders in staging area (is not commited yet)
 git commit -m = this thing commit your file / folders in staging area and the -m commands is a message like this git commit -m "Added hello_world.txt"
 git status = is to see a git yeah a git
+git branch = check current branching
+git branch <branch_name> = create a new branch
+git branch -d = delete branch if already been merged and -D if it's not
+git checkout <branch_name> = change branch
+git merge <branch_name> = git merge another branch to main
 git log = is to see a git changes like commit
 git push / git push origin main = pushing to remote repository 
 
@@ -12,6 +17,7 @@ git commit -am "automatic git add ."
 git config --global alias.ac "commit -am" = alias commmand it means you created another command in here is ac it means commit -am
 git commit --amend -m "change message of last commit"
 git commit --amend --no-edit = add files to last commit
+git checkout -b branchName = create branch and move it
 
 git push origin master --force = overwrite history on remote
 git revert better-days = undo a commit with a new commit.
@@ -44,24 +50,7 @@ git clean -df = remove untrack file
 
 
 
-Cheatsheet
 
-This is a reference list of the most commonly used Git commands. (You might consider bookmarking this handy page.) Try to familiarize yourself with the commands so that you can eventually remember them all:
 
-    Commands related to a remote repository:
-        git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
-        git push or git push origin main (Both accomplish the same goal in this context)
-    Commands related to the workflow:
-        git add .
-        git commit -m "A message describing what you have done to make this snapshot different"
-    Commands related to checking status or log history
-        git status
-        git log
 
-The basic Git syntax is program | action | destination.
 
-For example,
-
-    git add . is read as git | add | ., where the period represents everything in the current directory;
-    git commit -m "message" is read as git | commit -m | "message"; and
-    git status is read as git | status | (no destination).
