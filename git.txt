@@ -10,6 +10,7 @@ git checkout <branch_name> = change branch add -b for create
 git merge <branch_name> = git merge another branch to main
 git log = is to see a git changes like commit
 git push / git push origin main = pushing to remote repository 
+git push origin <branch name> = pusing new branch to github
 
 GIT SHORTCUTS
 
